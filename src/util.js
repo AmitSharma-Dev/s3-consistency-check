@@ -1,6 +1,5 @@
 const AWS = require('aws-sdk');
 var uuid = require('uuid');
-AWS.config.credentials = new AWS.SharedIniFileCredentials({profile: 'comproGreenDev'});
 const s3 = new AWS.S3();
 const bucketName = 'c1-apps-dev-test';
 let fileName = uuid.v1();
